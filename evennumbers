@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main() {
+    int a[10],sum=0,n,i;
+    printf("enter the size");
+  scanf("%d",&n);
+  printf("the elements of an array:\n");
+  for(i=0;i<n;i++)
+  scanf("%d",&a[i]);
+  for(i=0;i<n;i++)
+  {
+      if(a[i]%2==0)
+      {
+          sum=sum+a[i];
+      }
+  }
+  printf("the sum of the even numbers is:%d",sum);
+}
